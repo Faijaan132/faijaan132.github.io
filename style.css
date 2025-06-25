@@ -1,0 +1,175 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1a;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #2f2f2f;
+  padding: 25px 20px;
+  text-align: center;
+  border-bottom: 3px solid #e6005c;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #e6005c;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Navbar */
+nav {
+  background-color: #2a2a2a;
+  border-bottom: 1px solid #444;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: #eaeaea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  border-bottom: 2px solid #e6005c;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding-top: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Headings */
+h2 {
+  color: #e6005c;
+  font-size: 1.7rem;
+  margin-top: 30px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #ff4c8b;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+.member {
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #1c1c1c;
+  border: 1px solid #444;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.member:hover {
+  background-color: #292929;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Paragraphs */
+p {
+  margin: 10px 0;
+}
+
+/* Member cards */
+.member {
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-left: 4px solid #e6005c;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* Image */
+.banner-image {
+  width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Button */
+button {
+  background-color: #e6005c;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #c4004c;
+}
